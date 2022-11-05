@@ -1,0 +1,76 @@
+[user]
+	name = Tine Kondo
+	email = kondotine@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	st = status
+	br = branch
+	rb = rebase
+	rbi = rebase -i
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbid = rebase -i head~2
+	rbit = rebase -i head~3
+	rbir = rebase -i --root
+	co = commit
+	cp = cherry-pick
+	cpa = cherry-pick --abort
+	cpc = cherry-pick --continue
+	ck = checkout
+	fo = fetch origin
+	fu = fetch upstream
+	po = push origin
+	poc = push origin HEAD
+	pocf = push origin HEAD --force-with-lease
+	ckm = checkout master
+	ckd = checkout develop
+	ckb = checkout -b
+	pom = push origin master
+	pomf = push origin master --force-with-lease
+	com = commit -m
+	coa = commit --amend
+
+	rbm = rebase master
+	rbom = rebase origin/master
+	rbum = rebase upstream/master
+	rbod = rebase origin/develop
+
+	prbom = pull origin master --rebase
+	prbum = pull upstream master --rebase
+	prbod = pull origin develop --rebase
+	prbud = pull upstream develop --rebase
+
+	rpo = remote prune origin
+	rpu = remote prune upstream
+	rhod = reset --hard origin/develop
+	rhom = reset --hard origin/master
+	rhum = reset --hard upstream/master
+
+	amc = am --continue
+	ama = am --abort
+	ams = am --skip
+	amr = am --3way --ignore-space-change --keep-cr --reject
+	
+	addu = add --update
+	adda = add -A
+[core]
+	autocrlf = input
+	editor = code --wait
+[rerere]
+	enabled = true

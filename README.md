@@ -1,2 +1,3 @@
-# dot-files
-Repository containing my dot-files to customize my codespaces
+# dotfiles
+
+Repository containing my dotfiles to customize my codespaces
