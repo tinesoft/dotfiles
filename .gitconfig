@@ -69,6 +69,11 @@
 	
 	addu = add --update
 	adda = add -A
+	
+	upod = !git fo && git stash && git rbod && git stash pop
+	upom = !git fo && git stash && git rbom && git stash pop
+	
+	hist = log --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --graph --date=short
 [core]
 	autocrlf = input
 	editor = code --wait
