@@ -45,7 +45,8 @@
 	pomf = push origin master --force-with-lease
 	com = commit -m
 	coa = commit --amend
-	coane = commit --amend no-edit
+	coane = commit --amend --no-edit
+	coanef = !git commit --amend --no-edit && git pocf
 
 	rbm = rebase master
 	rbom = rebase origin/master
