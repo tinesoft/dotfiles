@@ -39,22 +39,28 @@
 	poc = push origin HEAD
 	pocf = push origin HEAD --force-with-lease
 	ckm = checkout master
+	ckmn = checkout main
 	ckd = checkout develop
+	ckz = !git checkout $(git rev-list --max-parents=0 HEAD)
 	ckb = checkout -b
-	pom = push origin master
-	pomf = push origin master --force-with-lease
+	ckbz = !git checkout -b $(git rev-list --max-parents=0 HEAD)
 	com = commit -m
 	coa = commit --amend
 	coane = commit --amend --no-edit
-	coanef = !git commit --amend --no-edit && git pocf
+	coanef = !git coane && git pocf
 
 	rbm = rebase master
+	rbmn = rebase main
 	rbom = rebase origin/master
+	rbomn = rebase origin/main
 	rbum = rebase upstream/master
+	rbumn = rebase upstream/main
 	rbod = rebase origin/develop
 
 	prbom = pull origin master --rebase
+	prbomn = pull origin main --rebase
 	prbum = pull upstream master --rebase
+	prbumn = pull upstream main --rebase
 	prbod = pull origin develop --rebase
 	prbud = pull upstream develop --rebase
 
@@ -62,7 +68,9 @@
 	rpu = remote prune upstream
 	rhod = reset --hard origin/develop
 	rhom = reset --hard origin/master
+	rhomn = reset --hard origin/main
 	rhum = reset --hard upstream/master
+	rhumn = reset --hard upstream/main
 
 	amc = am --continue
 	ama = am --abort
@@ -74,7 +82,7 @@
 	
 	upod = !git fo && git stash && git rbod && git stash pop
 	upom = !git fo && git stash && git rbom && git stash pop
-	upum = !git fu && git stash && git rbum && git stash pop
+	upomn = !git fo && git stash && git rbomn && git stash pop
 	
 	hist = log --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --graph --date=short
 [core]
