@@ -1,3 +1,3 @@
 # dotfiles
 
-Repository containing my dotfiles to customize my codespaces
+Repository containing useful dot-files to customize `devcontainers` setup (`VSCode` or `GitHub Codespaces`-based)
