@@ -83,6 +83,11 @@
 	upod = !git fo && git stash && git rbod && git stash pop
 	upom = !git fo && git stash && git rbom && git stash pop
 	upomn = !git fo && git stash && git rbomn && git stash pop
+
+	wab   = worktree add -b
+	wl    = worktree list
+	wr    = worktree remove
+	wp    = worktree prune
 	
 	hist = log --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --graph --date=short
 [core]
