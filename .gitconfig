@@ -22,7 +22,7 @@
 	st = status
 	br = branch
     brd = branch -D
-    brù = branch -m
+    brm = branch -m
 	rb = rebase
 	rbi = rebase -i
 	rba = rebase --abort
