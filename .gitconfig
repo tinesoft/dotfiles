@@ -21,6 +21,8 @@
 [alias]
 	st = status
 	br = branch
+    brd = branch -D
+    brù = branch -m
 	rb = rebase
 	rbi = rebase -i
 	rba = rebase --abort
@@ -85,6 +87,7 @@
 	upomn = !git fo && git stash && git rbomn && git stash pop
 
 	wab   = worktree add -b
+	wa    = worktree add
 	wl    = worktree list
 	wr    = worktree remove
 	wp    = worktree prune
