@@ -93,6 +93,8 @@
 	wp    = worktree prune
 	
 	hist = log --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --graph --date=short
+
+	fup = !git fo && git reset --hard origin/$(git branch --show-current)
 [core]
 	autocrlf = input
 	editor = code --wait
